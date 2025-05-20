@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function saveExpenceLocal(){
         localStorage.setItem("expences",JSON.stringify(expences))
+        
     }
 
     function updateTotal(){
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             `
             expencList.appendChild(li)
         })
+        updateTotal()
     }
     expencList.addEventListener("click", (e)=>{
         if(e.target.tagName==="BUTTON"){
