@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     function updateTotal(){
         totalAmount=calculateTOtal()
-        totalAmountDisplay.textContent=totalAmount.toFixed(2)
+        totalAmountDisplay.textContent=`$ ${totalAmount.toFixed(2)} `
         console.log(totalAmountDisplay);
         
     }
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         expences.forEach(expence => {
             let li=document.createElement('li')
             li.innerHTML=`
-            ${expence.name} - $${expence.amount}
+            ${expence.name} - $ ${expence.amount}
             <button data-id=${expence.id}>Delete</button
             `
             expencList.appendChild(li)
