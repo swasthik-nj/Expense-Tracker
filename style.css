@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(rgb(84, 10, 10) -101%,rgb(2, 0, 0) 130%);
+}
+.container{
+    height: 50vh;
+    width: 160vh;
+    /* border: 1px solid rgb(130, 128, 128); */
+    padding: 10px 30px 10px 20px;
+    /* overflow: hidden; */
+
+    h1{
+        text-align: center;
+        color: rgb(199, 249, 249);
+        font-size: 40px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+.expense-container{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+.expence-output{
+    border: 2px solid rgb(199, 249, 249);
+    padding: 20px;
+    border-radius: 10px;
+    overflow: scroll;
+    width: 50%;
+    margin: 0 20px 0 20px;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    h2{
+        font-size: 27px;
+        color: rgb(203, 248, 171);
+        padding-bottom: 20px;
+        
+    }
+    #expence-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+       
+        #expence-name{
+            width: 90%;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 11px 10px 6px 13px;
+            background-color: rgb(50, 16, 16);
+            border: 1px solid rgb(50, 16, 16);
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+        }
+        #expence-amount{
+            width: 90%;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            padding: 11px 10px 6px 13px;
+            background-color: rgb(50, 16, 16);
+            border: 1px solid rgb(50, 16, 16);
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+}
+button{
+    padding: 13px 10px 8px 10px;
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color: rgb(64, 21, 11);
+    border: 1px solid rgb(49, 10, 1);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    }
+    h3{
+        color: azure;
+        padding-top: 20px;
+        #total-amount{
+            font-size: 30px;
+            padding-left: 10px;
+            
+            color: rgb(177, 255, 229);
+        }
+    }
+    li{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        color: aliceblue;   
+        font-size: 18px;
+        background-color: rgb(50, 16, 16);
+        width: 80%;
+        padding: 6px 30px 5px 50px;
+        border-radius:4px ;
+        -webkit-border-radius:4px ;
+        -moz-border-radius:4px ;
+        -ms-border-radius:4px ;
+        -o-border-radius:4px ;
+}
+    #expence-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+button{
+    background-color: rgb(255, 21, 0);
+    color: rgb(57, 6, 6);
+        border: 1px solid rgb(60, 7, 7);
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: bold;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+@media screen and (max-width:724px){
+    .expense-container{
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    }
+    .expence-output{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .expence-output li {
+        font-size: 16px;
+        align-items: center;
+       padding: 6px 20px 5px 30px;
+    }
+    .expence-output button{
+        font-weight: bold;
+        color: rgb(57, 6, 6);
+        border: 1px solid rgb(60, 7, 7);
+    }
+}
+@media screen and (max-width: 400px) {
+    .container h1{
+        font-size: 37px;
+    }
+}
